@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/authorization.css">
+    <title>Личный кабинет МУП Водоканал Сергиев Посад</title>
+    <link rel="icon" href="/icon/Logo.png">
+</head>
+
+
+    	<!-- Montserrat (font-family: 'Montserrat', sans-serif;) -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+        </style>
+    
+        <!-- Roboto (font-family: 'Roboto', sans-serif;) -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+        </style>
+    
+        <!-- Yanone Kaffeesatz (font-family: 'Yanone Kaffeesatz', sans-serif;) -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+        </style>
+
+
+<body>
+
+
+	<!-- LOADING -->
+    <div class="mask">
+        <div class="loader">    
+            <svg>
+                <g>
+                    <path d="M 50,100 A 1,1 0 0 1 50,0"/>
+                </g>
+                <g>
+                    <path d="M 50,75 A 1,1 0 0 0 50,-25"/>
+                </g>
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#91b0ff;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#2056D8;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+	<!-- CONTENT BLOCK -->
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Авторизация</label>
+					<input type="text" name="txt" placeholder="Имя пользователя" required="">
+					<input type="email" name="email" placeholder="Почта" required="">
+					<input type="password" name="pswd" placeholder="Пароль" required="">
+					<button>Зарегистрироваться</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Войти</label>
+					<input type="email" name="email" placeholder="Почта" required="">
+					<input type="password" name="pswd" placeholder="Пароль" required="">
+					<button>Войти</button>
+				</form>
+			</div>
+	</div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
